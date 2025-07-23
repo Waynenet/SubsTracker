@@ -3,16 +3,9 @@ main = "index.js"
 compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
 
-[env.production]
-name = "renewal"
-
-[env.staging]
-name = "renewal-staging"
-
 # KV 命名空间配置
 [[kv_namespaces]]
 binding = "SUBSCRIPTIONS_KV"
-preview_id = "55a0cc019d544671b6c14123810847ea"
 id = "55a0cc019d544671b6c14123810847ea"
 
 # 定时任务配置 - 每天早上8点检查
